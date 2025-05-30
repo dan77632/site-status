@@ -4,25 +4,13 @@ repo: status-do-site        # Nome do repositório onde o Upptime está configur
 
 # Lista de sites para monitorar
 sites:
-  - name: Google
-    url: https://www.google.com
-
-  - name: Wikipédia
-    url: https://en.wikipedia.org
-
-  - name: Hacker News
-    url: https://news.ycombinator.com
 
   - name: Prefeitura Banabuiu       # Nome mais descritivo para facilitar entendimento
     url: https://banabuiu.ce.gov.br
     port: 443                      # HTTPS padrão, pode deixar explícito
     check: "http"                  # Verificação HTTP padrão
 
-  - name: Teste IPv6
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+
 
 # Configurações da página de status pública gerada
 status-website:
