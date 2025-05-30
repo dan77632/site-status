@@ -10,7 +10,7 @@ sites:
   - name: Hacker News
     url: https://news.ycombinator.com
   - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
+    url: https://banabuiu.ce.gov.br
   - name: IPv6 test
     url: forwardemail.net
     port: 80
