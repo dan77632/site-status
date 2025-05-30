@@ -1,36 +1,46 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Configurações básicas do Upptime - ajuste 'owner' e 'repo' para seu usuário e repositório
+owner: dan77632             # Seu usuário GitHub
+repo: status-do-site        # Nome do repositório onde o Upptime está configurado
 
+# Lista de sites para monitorar
 sites:
   - name: Google
     url: https://www.google.com
-  - name: Wikipedia
+
+  - name: Wikipédia
     url: https://en.wikipedia.org
+
   - name: Hacker News
     url: https://news.ycombinator.com
-  - name: Test Broken Site
+
+  - name: Prefeitura Banabuiu       # Nome mais descritivo para facilitar entendimento
     url: https://banabuiu.ce.gov.br
-  - name: IPv6 test
+    port: 443                      # HTTPS padrão, pode deixar explícito
+    check: "http"                  # Verificação HTTP padrão
+
+  - name: Teste IPv6
     url: forwardemail.net
     port: 80
     check: "tcp-ping"
     ipv6: true
 
+# Configurações da página de status pública gerada
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
+  cname: dan77632.github.io/site-status  # Seu domínio público GitHub Pages (ajuste se for outro)
+  # baseUrl: /status-do-site              # Descomente e ajuste se usar domínio padrão do GitHub
+
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+
+  name: Status do Site - Upptime
+
+  introTitle: "**Upptime** - Monitoramento aberto de status de sites, totalmente via GitHub."
+  introMessage: |
+    Esta é uma página de status que usa dados em **tempo real** do nosso repositório [GitHub](https://github.com/dan77632/status-do-site).  
+    Sem necessidade de servidores adicionais — apenas GitHub Actions, Issues e Pages.  
+    [**Configure o seu gratuitamente!**](https://github.com/upptime/upptime)
+
   navbar:
     - title: Status
       href: /
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+      href: https://github.com/dan77632/status-do-site
